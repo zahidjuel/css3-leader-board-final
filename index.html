@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5886a78e61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Css grid & flexbox</title>
+</head>
+<body>
+    <main>
+        <!------------------ header section --------------->
+        <header>
+            <nav>
+                <span>
+                    <a href="#"><img src="./images/icons/logo.png" alt="" width="40px" height="55px"></a>
+                    <a href="#" style="font-size: 24px;" >Idea</a>
+                </span>
+                <span>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Works</a>
+                    <a href="#" title="Profile"><img src="./images/icons/profile.png" alt="" width="55px" height="55px"></a>
+                </span>
+            </nav>
+       </header>  
+        <!------------ Top player & Top blog section ------------->
+        <section>
+            <!---------------- Top player section  ------------->
+            <div class="top-player">
+                <h2 class="title">Top Player</h2>
+                <div class="players">
+                    <div class="player">
+                        <img src="./images/players/player-1.png" alt="" width="55px" height="55px" >
+                        <h3 class="player-name">John Smith</h3>
+                    </div>
+                    <div class="player">
+                        <img src="./images/players/player-2.png" alt="" width="55px" height="55px" >
+                        <h3 class="player-name">Shane walton</h3>
+                    </div>
+                    <div class="player">
+                        <img src="./images/players/player-3.png" alt="" width="55px" height="55px" >
+                        <h3 class="player-name">Steve jobs</h3>
+                    </div>
+                    <div class="player">
+                        <img src="./images/players/player-4.png" alt="" width="55px" height="55px" >
+                        <h3 class="player-name">Zahid Juel</h3>
+                    </div>
+                    <div class="player">
+                        <img src="./images/players/player-5.png" alt="" width="55px" height="55px">
+                        <h3 class="player-name">Steve paul</h3>
+                    </div>
+                    <div class="player">
+                        <img src="./images/players/player-6.png" alt="" width="55px" height="55px">
+                        <h3 class="player-name">Maruf Ahmed</h3>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!----------- Top blog section ----------->
+            <div class="top-blog">
+                <h2 class="title">Top Blog</h2>
+                <div class="blogs">
+                    <div class="blog">
+                        <div class="photo">
+                            <img src="./images/blogs/blog-1.png" alt="" width="175px" height=""175px>
+                        </div>
+                        <div class="photo-detail">
+                            <h3>13 of My Favorite UI/UX Goodies</h3>
+                            <p>By <a href="#">Danny Sapio</a></p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="photo">
+                            <img src="./images/blogs/blog-2.png" alt="" width="175px" height=""175px>
+                        </div>
+                        <div class="photo-detail">
+                            <h3>UI cheat sheet: list vs grids</h3>
+                            <p>By <a href="#">Tess Gadd</a></p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="photo">
+                            <img src="./images/blogs/blog-3.png" alt="" width="175px" height=""175px>
+                        </div>
+                        <div class="photo-detail">
+                            <h3>7 typography tips for interface design</h3>
+                            <p>By <a href="#">Jeremiah Lam</a></p>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="photo">
+                            <img src="./images/blogs/blog-4.png" alt="" width="175px" height=""175px>
+                        </div>
+                        <div class="photo-detail">
+                            <h3>Your logo is Copied</h3>
+                            <p>By <a href="#">Ferdinand vloger</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------- Latest course section  ------------------>
+        <section>
+            <div class="top-course">
+                <h2 class="title">Latest Courses</h2>
+                <div class="courses">
+                    <div class="course">
+                        <div class="thumbnail">
+                            <img src="./images/courses/course-1.png" alt="" width="225px" height="105px">
+                        </div>
+                        <div class="course-title">
+                            <h3>React the complete Guide - 2022</h3>
+                            <a href="#">Reed Karkoff</a>
+                        </div>
+                        <div class="course-info">
+                            <div class="course-ratting">
+                                <div class="course-star">
+                                    <figure>
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                    </figure>
+                                    <div class="font-icon">
+                                        <i class="fa-solid fa-star" style="font-size: 10px; color: #AEAEAE;"></i>
+                                    </div>
+                                </div>
+                                <div class="ratting-point">
+                                    <p style="color: #AEAEAE;">4.5</p>
+                                </div>
+                            </div>
+                            <div class="course-duration">
+                                <img src="./images/icons/clock.png" alt="" width="20px" height="20px">
+                                <p>1.30 hr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="thumbnail">
+                            <img src="./images/courses/course-2.png" alt="" width="225px" height="105px">
+                        </div>
+                        <div class="course-title">
+                            <h3>Power-piont master course - 2022</h3>
+                            <a href="#">Sadman sadik</a>
+                        </div>
+                        <div class="course-info">
+                            <div class="course-ratting">
+                                <div class="course-star">
+                                    <figure>
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                    </figure>
+                                    <div class="font-icon">
+                                        <i class="fa-solid fa-star" style="font-size: 10px; color: #AEAEAE;"></i>
+                                    </div>
+                                </div>
+                                <div class="ratting-point">
+                                    <p style="color: #AEAEAE;">4.5</p>
+                                </div>
+                            </div>
+                            <div class="course-duration">
+                                <img src="./images/icons/clock.png" alt="" width="20px" height="20px">
+                                <p>1.30 hr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="thumbnail">
+                            <img src="./images/courses/course-3.png" alt="" width="225px" height="105px">
+                        </div>
+                        <div class="course-title">
+                            <h3>Javascript the complete Course - 2022</h3>
+                            <a href="#">Jhankar Mahbub</a>
+                        </div>
+                        <div class="course-info">
+                            <div class="course-ratting">
+                                <div class="course-star">
+                                    <figure>
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                        <img src="./images/icons/star.png" alt="" width="12px" height="12px">
+                                    </figure>
+                                    <div class="font-icon">
+                                        <i class="fa-solid fa-star" style="font-size: 10px; color:#AEAEAE;"></i>
+                                    </div>
+                                </div>
+                                <div class="ratting-point">
+                                    <p style="color: #AEAEAE;">4.5</p>
+                                </div>
+                            </div>
+                            <div class="course-duration">
+                                <img src="./images/icons/clock.png" alt="" width="20px" height="20px">
+                                <p>1.30 hr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

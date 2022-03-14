@@ -1,0 +1,190 @@
+
+/* ------------------  Common styles ---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title{
+    color: #562EFF;
+    margin-bottom: 30px;
+}
+
+/* ----------------- header section style ------------ */
+header{
+    background-color: #562EFF;
+}
+
+nav{
+    max-width: 870px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav span{
+    display: flex;
+    align-items: center;
+}
+
+nav span a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 24px;
+}
+
+/* ------------- main tag style ---------- */
+main{
+    background-color: #F3F1FF;
+}
+
+/* -------------------- Top player & Top blog styles ------------------ */
+section{
+    max-width: 870px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 15px;
+}
+
+/* ---------- Top player style --------------- */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px
+}
+
+.player{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.player-name{
+    font-size: 18px;
+}
+
+hr{
+    border: 1px solid #D1D1D1;
+    margin: 30px 0px;
+}
+
+/* ------------- Top blog section -------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.blog{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.photo-detail p{
+    color: #9F9F9F;
+    margin-top: 8px;
+}
+
+.photo-detail a{
+    color: #562EFF;
+    text-decoration: none;
+}
+
+/* ------ Top course style-------- */
+.courses{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.course{
+    width: 255px;
+    height: 270px;
+    font-family: roboto;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.01);
+}
+
+.course-title h3{
+margin: 15px 0px 20px 0px;
+}
+
+.course-title a{
+    color: #ED6B4F;
+    text-decoration: none;
+    font-size: 16px;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.course-ratting{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-star{
+    display: flex;
+    align-items: center;
+}
+
+.course-duration{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    color: #FF4A60;
+    background-color: #FEE5DF;
+    border-radius: 15px;
+}
+
+/* -----------------  Responsive design -----------------*/
+@media only screen and (max-width: 688px) {
+   /* --------- Mobile device -------- */
+    nav{
+     flex-wrap: wrap;
+    }
+
+    .players,.blogs,.courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+   .player{
+       justify-content: center;
+       flex-direction: column;
+   }
+
+   .blog{
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .courses{
+       justify-items: center;
+   }
+}
+
+/* ------------- Tablet device ------------ */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+}
